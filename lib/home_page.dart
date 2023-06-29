@@ -76,8 +76,19 @@ class HomePgeState extends State<HomePage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('Futbol - Cyprus Live Score',
-                    style: TextStyle(color: Colors.green, fontSize: 30)),
+                const Text(
+                  'Futbol - Cyprus Livescore App',
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                ),
+                 const Text(
+                  'DOWNLOAD NOW!',
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w200),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
