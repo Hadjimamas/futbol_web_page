@@ -63,12 +63,9 @@ class HomePgeState extends State<HomePage> {
             Stack(
               alignment: Alignment.topCenter,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(10.0),
-                  child: Image.asset(
-                    'assets/home_page.png',
-                    scale: 2,
-                  ),
+                Image.asset(
+                  'assets/home_page.png',
+                  scale: 2,
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 500),
