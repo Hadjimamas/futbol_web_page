@@ -35,7 +35,7 @@ class HomePgeState extends State<HomePage> {
               ),
             ),
             IconButton(
-              tooltip: 'Facebook',
+              tooltip: 'Instagram',
               onPressed: () {},
               icon: const Icon(
                 FontAwesomeIcons.instagram,
