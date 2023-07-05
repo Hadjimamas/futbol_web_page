@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:universal_platform/universal_platform.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,6 +11,18 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePgeState extends State<HomePage> {
+  @override
+  void initState() {
+    if (UniversalPlatform.isAndroid) {
+      launchUrlString(
+          'https://play.google.com/store/apps/details?id=com.livescore.cyprus');
+    } else if (UniversalPlatform.isIOS) {
+      launchUrlString(
+          'https://apps.apple.com/cy/app/futbol-cyprus-livescore/id6449159778?platform=iphone');
+    }
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
